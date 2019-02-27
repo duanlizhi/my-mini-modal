@@ -1,0 +1,57 @@
+.mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.63);
+  z-index: 99999999999;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.modal-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 120rpx;
+  line-height: 100rpx;
+  border-top: 2rpx solid rgba(7, 17, 27, 0.1);
+}
+
+.cancel-btn, .confirm-btn {
+  flex: 1;
+  padding: 10px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  border-top: 1px solid #e8e8ea;
+}
+
+.cancel-btn {
+  border-right: 2rpx solid rgba(7, 17, 27, 0.1);
+}
+
+.confirm-btn {
+  color: #3cc51f;
+}
+
+.main-content {
+  padding:15px;
+  flex: 1;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.modal-header {
+  padding: 15px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+}

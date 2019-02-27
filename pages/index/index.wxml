@@ -1,0 +1,38 @@
+<!-- 引用组件的页面模版 -->
+<view>
+  <button bindtap='showModal' type='warn' style='top:180px;'>修改密码</button>
+</view>
+<my-modal show="{{isShow}}" title="修改密码" height="60%" bindcancel="cancle" bindconfirm="confirm">
+  <view class="weui-cells weui-cells_after-title" style='width:90%;'>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">旧密码
+          <font style="color:red;">*</font>
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <input password="true" bindinput='oldPassInput' class="weui-input" placeholder="请输入旧密码" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">新密码
+          <font style="color:red;">*</font>
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <input bindinput='newPassInput' password="true" class="weui-input" placeholder="请输入新密码" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">确认密码
+          <font style="color:red;">*</font>
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <input bindinput='confirmPassInput' bindblur='confirmPass' password="true" class="weui-input" placeholder="请输入确认密码" />
+      </view>
+    </view>
+  </view>
+</my-modal>
